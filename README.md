@@ -38,7 +38,7 @@ DB_CONNECTION=pgsql
 DB_HOST=db           
 DB_PORT=5432
 DB_DATABASE=esqueleto_laravel  
-DB_USERNAME=contato@phpfullstack.com.br         
+DB_USERNAME=noreply@phpfullstack.com.br         
 DB_PASSWORD=admin        
 
 CACHE_DRIVER=redis
@@ -90,5 +90,5 @@ php artisan key:generate
 ## Acesse o PgAdmin
 
 - :brain: [http://localhost:8080](http://localhost:8080)
-- :man: Usuário: contato@phpfullstack.com.br
+- :man: Usuário: noreply@phpfullstack.com.br
 - :key: Senha: admin

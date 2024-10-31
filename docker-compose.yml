@@ -33,8 +33,8 @@ services:
         platform: linux/x86_64
         restart: unless-stopped
         environment:
-            POSTGRES_DB: ${DB_DATABASE:-laravel}
-            POSTGRES_USER: ${DB_USERNAME:-contato@phpfullstack.com.br}
+            POSTGRES_DB: ${DB_DATABASE:-esqueleto_laravel}
+            POSTGRES_USER: ${DB_USERNAME:-noreply@phpfullstack.com.br}
             POSTGRES_PASSWORD: ${DB_PASSWORD:-admin}
         volumes:
             - ./.docker/postgres/dbdata:/var/lib/postgresql/data
@@ -49,7 +49,7 @@ services:
         platform: linux/x86_64
         restart: unless-stopped
         environment:
-            PGADMIN_DEFAULT_EMAIL: ${PGADMIN_EMAIL:-antonio@phpfullstack.com.br}
+            PGADMIN_DEFAULT_EMAIL: ${PGADMIN_EMAIL:-noreply@phpfullstack.com.br}
             PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_PASSWORD:-admin}
         ports:
             - "8080:80"
