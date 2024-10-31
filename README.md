@@ -1,4 +1,4 @@
-# Esqueleto Gratuito do Laravel 11.x/PostgreSQ
+# Esqueleto Gratuito do Laravel 11.x/PostgreSQL
 
 ## Ao final do projeto você terá um ambiente:
 - PHP 8.3.13
@@ -8,12 +8,12 @@
 - PgAdmin, semelhante ao PHPMyAdmin mas para PostgreSQL
 - Redis, versão mais estável
 
-Links Úteis:
+**Links Úteis:**
 
 - :tada: [Site: https://phpfullstack.com.br](https://phpfullstack.com.br/)
 
 ## Passo a passo para rodar o projeto
-Clone o projeto
+**Clone o projeto**
 ```sh
 git clone https://github.com/antonio-phpfullstack/esqueleto-laravel esqueleto-laravel
 ```
@@ -22,13 +22,13 @@ cd esqueleto-laravel/
 ```
 
 
-Crie o Arquivo .env
+**Crie o Arquivo .env**
 ```sh
 cp .env.example .env
 ```
 
 
-Atualize essas variáveis de ambiente no arquivo .env
+**Atualize essas variáveis de ambiente no arquivo .env**
 ```dosini
 APP_NAME="Esqueleto Laravel"
 APP_URL=http://localhost:8000
@@ -50,12 +50,12 @@ REDIS_PASSWORD=null
 REDIS_PORT=6379
 ```
 
-No arquivo Dockerfile, altere o nome do usuário para o usuário linux da sua máquina, ex: user=antonio
+**No arquivo Dockerfile, altere o nome do usuário para o usuário linux da sua máquina, ex: user=antonio**
 ```sh
 ARG user=seu_usuario_linux
 ```
 
-Suba os containers do projeto
+**Suba os containers do projeto**
 ```sh
 docker-compose up -d
 OU
@@ -63,7 +63,7 @@ docker compose up -d
 ```
 
 
-Acesse o container
+**Acesse o container**
 ```sh
 docker-compose exec app bash
 OU
@@ -71,13 +71,13 @@ docker compose exec app bash
 ```
 
 
-Instale as dependências do projeto
+**Instale as dependências do projeto**
 ```sh
 composer install
 ```
 
 
-Gere a key do projeto Laravel
+**Gere a key do projeto Laravel**
 ```sh
 php artisan key:generate
 ```
