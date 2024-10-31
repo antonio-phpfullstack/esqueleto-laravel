@@ -34,8 +34,8 @@ services:
         restart: unless-stopped
         environment:
             POSTGRES_DB: ${DB_DATABASE:-laravel}
-            POSTGRES_USER: ${DB_USERNAME:-username}
-            POSTGRES_PASSWORD: ${DB_PASSWORD:-userpass}
+            POSTGRES_USER: ${DB_USERNAME:-contato@phpfullstack.com.br}
+            POSTGRES_PASSWORD: ${DB_PASSWORD:-admin}
         volumes:
             - ./.docker/postgres/dbdata:/var/lib/postgresql/data
         ports:

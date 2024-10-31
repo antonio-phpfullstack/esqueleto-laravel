@@ -1,9 +1,16 @@
 # Esqueleto Gratuito do Laravel 11.x/PostgreSQ
 
+## Ao final do projeto você terá um ambiente:
+- PHP 8.3.13
+- Nginx, versão mais estável
+- Laravel 11.30.0 
+- PostgreSQL 13
+- PgAdmin, semelhante ao PHPMyAdmin mas para PostgreSQL
+- Redis, versão mais estável
 
 Links Úteis:
 
-- :tada: [Site Pessoal](https://phpfullstack.com.br/)
+- :tada: [Site: https://phpfullstack.com.br](https://phpfullstack.com.br/)
 
 ## Passo a passo para rodar o projeto
 Clone o projeto
@@ -31,7 +38,7 @@ DB_CONNECTION=pgsql
 DB_HOST=db           
 DB_PORT=5432
 DB_DATABASE=esqueleto_laravel  
-DB_USERNAME=antonio@phpfullstack.com.br         
+DB_USERNAME=contato@phpfullstack.com.br         
 DB_PASSWORD=admin        
 
 CACHE_DRIVER=redis
@@ -43,16 +50,24 @@ REDIS_PASSWORD=null
 REDIS_PORT=6379
 ```
 
+No arquivo Dockerfile, altere o nome do usuário para o usuário linux da sua máquina, ex: user=antonio
+```sh
+ARG user=seu_usuario_linux
+```
 
 Suba os containers do projeto
 ```sh
 docker-compose up -d
+OU
+docker compose up -d
 ```
 
 
 Acesse o container
 ```sh
 docker-compose exec app bash
+OU
+docker compose exec app bash
 ```
 
 
@@ -68,5 +83,12 @@ php artisan key:generate
 ```
 
 
-Acesse o projeto
-[http://localhost:8000](http://localhost:8000)
+## Acesse o projeto
+
+- :tada: [http://localhost:8000](http://localhost:8000)
+
+## Acesse o PgAdmin
+
+- :tada: [http://localhost:8080](http://localhost:8080)
+- Usuário: contato@phpfullstack.com.br
+- Senha: admin

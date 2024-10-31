@@ -1,7 +1,7 @@
 FROM php:8.3-fpm
 
-# set your user name, ex: user=antonio
-ARG user=antonio
+# altere o nome de usuário do seu linux, ex: user=antonio
+ARG user=seu_usuario_linux
 ARG uid=1000
 
 # Install system dependencies
