@@ -85,10 +85,10 @@ php artisan key:generate
 
 ## Acesse o projeto
 
-- :tada: [http://localhost:8000](http://localhost:8000)
+- :rocket: [http://localhost:8000](http://localhost:8000)
 
 ## Acesse o PgAdmin
 
-- :tada: [http://localhost:8080](http://localhost:8080)
+- :database: [http://localhost:8080](http://localhost:8080)
 - Usuário: contato@phpfullstack.com.br
 - Senha: admin
