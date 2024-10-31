@@ -89,6 +89,6 @@ php artisan key:generate
 
 ## Acesse o PgAdmin
 
-- :database: [http://localhost:8080](http://localhost:8080)
-- Usuário: contato@phpfullstack.com.br
-- Senha: admin
+- :brain: [http://localhost:8080](http://localhost:8080)
+- :man: Usuário: contato@phpfullstack.com.br
+- :key: Senha: admin
