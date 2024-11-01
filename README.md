@@ -15,10 +15,10 @@
 ## Passo a passo para rodar o projeto
 **Clone o projeto**
 ```sh
-git clone https://github.com/antonio-phpfullstack/esqueleto-laravel esqueleto-laravel
+git clone https://github.com/antonio-phpfullstack/esqueleto-laravel-nginx-postgresql esqueleto-laravel-nginx-postgresql
 ```
 ```sh
-cd esqueleto-laravel/
+cd esqueleto-laravel-nginx-postgresql/
 ```
 
 
@@ -89,6 +89,6 @@ php artisan key:generate
 
 ## Acesse o PgAdmin
 
-- :brain: [http://localhost:8080](http://localhost:8080)
-- :man: Usuário: noreply@phpfullstack.com.br
-- :key: Senha: admin
+- :brain: ***Host:*** [http://localhost:8080](http://localhost:8080)
+- :man: ***Usuário:*** noreply@phpfullstack.com.br
+- :key: ***Senha:*** admin
